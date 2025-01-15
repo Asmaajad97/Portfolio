@@ -20,7 +20,7 @@ html
 }
 body
 {
-    font-family: "calibri", cursive;
+    font-family: 'Calibri', sans-serif;
     font-size: 18px;
     font-weight: normal;
     overflow-x: hidden;
