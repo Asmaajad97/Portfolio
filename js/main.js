@@ -156,4 +156,20 @@
                      {
                         toggleLightbox()
                      }
+                             <script>
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // منع إعادة تحميل الصفحة
+            
+            // الحصول على النص من حقل الرسالة
+            var message = document.getElementById('message').value;
+
+            // عرض الرسالة في صندوق الرسالة
+            var messageBox = document.getElementById('messageBox');
+            messageBox.style.display = 'block';
+            messageBox.innerText = 'لقد أرسلت الرسالة: ' + message;
+
+            // إعادة تعيين حقل الرسالة
+            document.getElementById('message').value = '';
+        });
+    </script>
                   })
